@@ -1,0 +1,142 @@
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f5ed;
+        color: #333;
+        
+    }
+
+    .nour {
+        padding: 30px;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        color: #9b5f0b;
+    }
+
+.custom-container {
+  padding: 20px 80px;
+  margin-top: -60px; 
+}
+
+/* cart*/
+.custom-card {
+  max-width: 270px;   
+  height: 340px;  
+  margin: 50px 50px;       
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(87, 62, 3, 0.334); 
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  
+}
+
+/* hover */
+.custom-card:hover {
+  transform: translateY(-15px) scale(1.05); 
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35); 
+}
+
+/* imag*/
+.news-card img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+/* zoom img */
+.news-card:hover img {
+  transform: scale(1.1);
+}
+
+/* text*/
+.news-card h3 {
+  font-size: 18px;
+  padding: 15px;
+  color: #6f4309;
+  font-weight: 600;
+}
+
+.news-card .date {
+  font-size: 14px;
+  color: #777;
+  margin: 10px 0 0;
+}
+.news-card a {
+    text-decoration: none;
+}
+
+/* Card Style */
+
+
+/* Animation */
+.carousel-item.active .custom-card {
+    animation: fadeUp 0.5s forwards;
+}
+.carousel-item.active .custom-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.carousel-item.active .custom-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}
+
+/* Dots */
+.carousel-indicators [data-bs-target] {
+    background-color: #333;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #6d4508 !important;
+}
+.carousel-indicators .active {
+    background-color: #89520e !important;
+}
+.carousel-indicators {
+    bottom: auto;     
+    top: 400px;
+}
+    .see-all {
+        margin: 30px auto;
+        display: block;
+        padding: 12px 25px;
+        background: rgb(155, 93, 48);
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .see-all:hover {
+        background: rgb(124, 66, 35);
+    }
+
+.nav-item .nav-link.highlight {
+  background: linear-gradient(135deg, rgb(155, 93, 48), rgb(112, 68, 36));
+  color: #fff !important;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.nav-item .nav-link.highlight:hover {
+  background: linear-gradient(135deg, rgb(180, 110, 55), rgb(130, 80, 40));
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.35);
+  animation: none; 
+}

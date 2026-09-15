@@ -1,0 +1,349 @@
+
+.imag{
+    height: 100vh!important;
+}
+.ima::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.633); 
+   
+}
+
+
+/* navbar */
+
+.myNave{
+    background-color: rgba(0, 0, 0, 0.41) !important;
+    font-size: 16px ;
+    padding: 5px 30px 0px 20px;
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    
+}
+
+.menu .nav-link.active,
+.menu .nav-link:hover {
+    color: rgb(155, 93, 48)  !important;
+}
+.dropdown-menu .dropdown-item {
+  color: rgb(155, 93, 48) !important; 
+} 
+.dropdown-menu-center {
+  right: 100% !important;
+  transform: translateX(40%) !important;
+}
+.c-border {
+  border: 2px solid #959292db; 
+  padding: 2px 6px;           
+  border-radius: 4px;         
+}
+.c-border:hover{
+    background-color: #5a5858 !important;
+}
+.dropdown-item:hover{
+    background-color: rgb(240, 209, 172);
+
+}
+
+
+
+/* logo text */
+.tx1 {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    line-height: 1;      
+    margin: 0;   
+    font-family:'Times New Roman', Times, serif;  
+    color: rgba(250, 251, 251, 0.926);         
+}
+
+.tx1 .tx2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+/* welcome text */
+.text{
+    position:absolute;
+    top: 40%;
+    left: 40%;
+    max-width: 900px;
+    margin: auto;
+    font-family:'Times New Roman', Times, serif;
+    color: rgba(255, 252, 252, 0.784) !important;
+}
+.tex{
+  font-size: 40px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text1{
+    font-size: 24px;
+    margin-left: 100px;
+}
+.p{
+    padding-left: 100px;
+}
+.bord{
+    border-right: 3px solid white !important;
+}
+.icon a{
+    flex: 0 0 50% !important;
+    text-align: left !important;
+    padding-left: 150% !important;
+    font-size: 80px;
+    color: rgb(155, 93, 48) !important;
+} 
+
+/* announcement */
+.announcement-bar {
+  background-color:rgb(225, 142, 83) ;
+  color: white;
+  padding: 20px 0;
+  padding-inline-start: 150px;
+  height: 80px !important;
+  font-family: 'Poppins', sans-serif;
+}
+.announcement-title {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 30px;
+  margin-left: 80px;
+}
+.arrow-btn {
+  background: rgba(15, 15, 15, 0.16);
+  color: #fdfcfc;
+  border-radius: 50%;
+  width: 29px;
+  height: 29px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+.arrow-btn:hover {
+  background: #f5f5f5;
+}
+.carousel-item {
+  font-size: 18px;
+}
+/* menna */
+.icon-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Icon default style */
+.icon-box-1 i {
+  background-color: rgb(155, 93, 48);
+  color: rgb(255, 255, 255);
+  border: 1.5px solid #ccc;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  padding: 8px 11px;
+  transition: all 0.3s ease;
+}
+.icon-box-1 i:hover{
+  color:rgb(155, 93, 48) ;
+  background-color: #ffffff;
+}
+.icon-box i {
+  background-color: rgb(255, 255, 255);
+  color: rgb(155, 93, 48);
+  border: 1.5px solid #ccc;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  padding: 8px 11px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.icon-box:hover i {
+  background-color: rgb(155, 93, 48);
+  color: white;
+  border-color: rgb(155, 93, 48);
+  transform: scale(1.05);
+}
+
+/* Right Column Styling */
+.pua-right {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  font-family: "Mada", sans-serif;
+}
+
+.pua-left {
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+/* Faded background image inside right column */
+.pua-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../imgs/B&WPUAimg.gif") no-repeat center center/cover;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.pua-right * {
+  position: relative;
+  z-index: 1; 
+}
+
+/* Hero Background */
+.hero {
+  background: url("../imgs/PUAnight2.jpeg") center center/cover no-repeat;
+  position: relative;
+  min-height: 90vh;
+}
+
+/* Dark overlay for better text visibility */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  font-family: "Mada", sans-serif;
+}
+
+.hero .container h1 {
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+/* PUA Button Style */  
+.btn-pua {
+  background-color: rgb(155, 93, 48);
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid rgb(155, 93, 48);
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+.btn-pua:hover {
+  background-color: rgb(112, 68, 36);
+  color: white;
+}
+ body {
+            font-family: 'Inter', sans-serif;
+            /* font-size: 12px !important; */
+        }
+
+        .footer-section {
+            background-color: rgb(155, 93, 48) !important;
+            
+        }
+
+       
+        .footer-section h4 {
+            position: relative;
+            padding-bottom: 15px;
+            
+        }
+
+        .footer-section h4::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            height: 2px;
+            width: 50px;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff !important;
+           
+            padding-left: 5px;
+        }
+
+        .social-icons a {
+            transition: color 0.3s ease, background-color 0.3s ease;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .social-icons a:hover {
+            background-color: #ffffff;
+            color: rgb(155, 93, 48) !important;
+        }
+
+        .subscribe-form input {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: #fff;
+        }
+
+        .subscribe-form input::placeholder {
+            padding-left: 84% !important;
+            color: #ccc;
+        }
+
+        .subscribe-form button {
+            background-color: #ffffff;
+            color: rgb(155, 93, 48) !important;
+        }
+
+        .back-to-top a {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(155, 93, 48) !important;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top a:hover {
+            background-color: rgb(155, 93, 48) !important;
+        }
+        .names{
+            font-size: 20px !important;
+            padding-left: 17px !important;
+            font-weight: bolder !important;
+        }
+        .butt{
+            margin-left: 60px;
+            padding: 10px 23px;
+            text-decoration: none;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 0.5px solid rgb(195, 118, 17) ;
+            background-color: antiquewhite;
+            color: rgb(195, 118, 17);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        .butt:hover {
+        background: rgb(124, 66, 35);
+    }
+    
+
+
+

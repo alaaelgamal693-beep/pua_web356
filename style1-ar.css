@@ -1,0 +1,95 @@
+
+.links .menu1{
+    list-style: none;
+    padding: 40px;
+    margin-left: 70px;
+}
+.links .menu1 a {
+    text-decoration: none !important;
+    color:#bd7554;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu1 a {
+  display: inline-block; 
+  padding: 5px 0;        
+}
+
+
+.links .menu1 a:hover {
+  color: rgb(73, 43, 8) !important;
+}
+.menu1 li a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  display: block; 
+  width: 250px;   
+  padding: 14px 0;
+}
+
+.menu1 li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 0.5px;
+  background-color: #bd7554;
+}
+.study-box {
+    background-color: #dfd9d2;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.581);
+    max-width: 900px;
+    margin: 40px auto; 
+    margin-left: 30px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #3e3c3c;
+    font-family: Poppins;
+    
+}
+
+.study-box h2 {
+    margin-bottom: 20px;
+    color: #ce721c; 
+    font-weight: bold;
+    text-align: center;
+    font-family:Montserrat;
+    padding-left: 70% !important;
+}
+.sq{
+    width: 100%;
+    height: 7px;
+    background-color: #ce721c;
+}
+
+
+
+
+
+.nav-item .nav-link.highlight {
+  background: linear-gradient(135deg, rgb(155, 93, 48), rgb(112, 68, 36));
+  color: #fff !important;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.nav-item .nav-link.highlight:hover {
+  background: linear-gradient(135deg, rgb(180, 110, 55), rgb(130, 80, 40));
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.35);
+  animation: none; 
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

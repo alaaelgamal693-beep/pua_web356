@@ -1,0 +1,55 @@
+body {
+    font-family:Montseerat!important;
+    background-color: #f9f9f9;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('../imgs/header3.png') center/cover no-repeat;
+                 min-height: 50vh;
+}
+
+/* Custom Card */
+.custom-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.custom-card h3 {
+    color: rgb(155, 93, 48);
+}
+
+.custom-card ul {
+    padding-left: 1.2rem;
+}
+
+.custom-card ul li {
+    margin-bottom: 0.5rem;
+    font-family: Poppins;
+    font-size: 16px;
+}
+.custom-card p {
+    font-family: Poppins;
+    font-size: 16px;
+}
+/* Buttons */
+.btn-1 {
+    border: 2px solid rgb(180, 98, 6);
+    background:linear-gradient(rgb(192, 112, 20),rgb(200, 155, 104),rgb(212, 188, 163)) ;
+    color: rgb(91, 56, 2);
+    border-radius: 30px;
+    font-weight: 550;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 8px;
+    font-family: Poppins !important;
+}
+.btn-1:hover{
+    background:linear-gradient(rgb(212, 188, 163),rgb(200, 155, 104),rgb(192, 112, 20)) ;
+}
+
+
+
