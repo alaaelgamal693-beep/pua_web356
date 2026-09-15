@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/nour.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <style>
+    body {
+      display: none;
+    }
+  </style>
+  <script>
+    (function () {
+      let lang = localStorage.getItem("lang") || "en";
+      let current = window.location.pathname.split("/").pop();
+      if (!current) current = "index.html";
+
+      let parts = current.split(".");
+      let baseName = parts[0].replace("-ar", "");
+      let extension = parts[1];
+
+      let newPage = (lang === "ar")
+        ? baseName + "-ar." + extension
+        : baseName + "." + extension;
+
+      if (current !== newPage) {
+        // التحويل للصفحة الصح فورًا
+        window.location.replace(newPage);
+      } else {
+        // لو الصفحة صح، نظهر المحتوى على طول
+        document.write('<style>body{display:block;}</style>');
+      }
+    })();
+    function switchLanguage(lang) {
+      localStorage.setItem("lang", lang);
+
+      let current = window.location.pathname.split("/").pop();
+      if (!current) current = "index.html";
+
+      let parts = current.split(".");
+      let baseName = parts[0].replace("-ar", "");
+      let extension = parts[1];
+
+      // نروح للنسخة الصح من الصفحة الحالية
+      let newPage = (lang === "ar")
+        ? baseName + "-ar." + extension
+        : baseName + "." + extension;
+
+      window.location.replace(newPage);
+    }
+  </script>
+</head>
+
+<body>
+  <!-- 1 -->
+  <div>
+    <div class=" ima position-relative text-center z-1">
+      <img src="./imgs/p6.jpg" class=" imag w-100 " alt="Background Image">
+
+      <div class=" text text-center text-white p-4   position-absolute z-1 ">
+        <h2 class=" tex display-4 fw-bold text-capitalize ">
+          welcome note from the
+          president of pharos university
+        </h2>
+        <div class="d-flex align-items-start" style="max-width: 900px;">
+          <p class="text1 bord lead mt-0 border-start ps-3" style="flex: 0 0 80%;">
+            I take pride in being the President of Pharos University PUA, this ancient university founded in 2006
+            as Alexandria’s first private university. Working for PUA is like no other, as it offers constructive
+            cooperation in a family atmosphere with a distinguished group of professors, administratives, and students.
+            I work diligently to serve everyone within this giant educational institution that offers a distinguished
+            and diverse educational service. PUA also seeks to realize the UN Sustainable Development Goals, and
+            Egypt 2030 Strategy.
+          </p>
+          <div class="icon text-center">
+            <a href="./imgs/WhatsApp Video 2025-08-15 at 5.37.46 AM.mp4">
+              <i class="fa-brands fa-youtube fa-beat-fade"></i>
+            </a>
+
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <nav class="navbar myNave navbar-expand-lg  text-white position-absolute  z-3 ">
+        <div class="container-fluid">
+          <a href="#"><img src="./imgs/p.logo-removebg-preview (1).png" alt="" class="logo"></a>
+          <p class="tx1">the university of <span class="tx2">pharos</span></p>
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class=" menu navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize  ">
+              <li class="nav-item text-white">
+                <a class=" active nav-link text-white px-2 d-inline-flex align-items-center" href="./index.html">
+                  home
+                </a>
+              </li>
+              <li class="nav-item dropdown text-white">
+                <a class="  nav-link dropdown-toggle text-white px-2" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  about PUA
+                </a>
+                <ul class=" dropdown-menu dropdown-menu-center p-3 " style="width: 1300px;">
+                  <div class=" row">
+                    <div class="col-lg-4 col-sm-12">
+                      <li><a class="dropdown-item c-border" href="#"> the university</a></li>
+                      <li><a class="dropdown-item " href="./index2.html"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> founder</a></li>
+                      <li><a class="dropdown-item " href="./index3.html"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> message from the president</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> university council</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> vision and mission</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> brochure</a></li>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                      <li><a class="dropdown-item c-border" href="#"> strategy</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> core values</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> university stratigic goals</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> policy statements</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> women bylaws to support their participation at work </a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> policy for minimization of <br> disposable items and different
+                          <br> waste disposale</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Prevention and Control of Smoking</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> ethical sourcing policy</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> sustainable procurement policy <br> in pharos university</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> sustainable investment policy</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> pay equity policy</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> equal access inclusion policy</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> climate action policy</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> pharos university for affordable <br> and clean energy</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> pharos university water <br> reuse policy</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> anti bribery policy</a></li>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                      <li><a class="dropdown-item c-border" href="#"> sustainablility</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> sustainablility reporting</a></li>
+                      <li><a class="dropdown-item c-border" href="#"> gender report</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> environment society government (ESG)</a></li>
+                      <li><a class="dropdown-item c-border" href="#"> quality</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> quality assurance center</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> administration quality department</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown text-white">
+                <a class="  nav-link dropdown-toggle text-white px-2" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Faculties
+                </a>
+                <ul class=" dropdown-menu dropdown-menu-center p-3" style="width: 850px;">
+                  <div class=" row">
+                    <div class="col-lg-6 col-sm-12">
+                      <li><a class="dropdown-item " href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Faculty of Pharmacy</a></li>
+                      <li><a class="dropdown-item " href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Faculty of Dentistry</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Faculty of Financial and Administrative Sciences</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Faculty of Languages & Translation</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Faculty of Legal Studies and International Transactions</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Faculty of Tourism and Hotels Management</a></li>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Faculty of Physical Therapy</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Faculty of Mass Communication</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Faculty of Applied Health Sciences Technology</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Faculty of Computer Science & Artificial Intelligence</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                            style="color: #5a5858;"></i> Faculty of Engineering</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown text-white">
+                <a class="  nav-link dropdown-toggle text-white px-2" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  PUA admission
+                </a>
+                <ul class=" dropdown-menu p-3" style="width: 400px;">
+                  <div class=" row">
+                    <li><a class="dropdown-item " href="#"> <i class="fa-solid fa-square fa-2xs"
+                          style="color: #5a5858;"></i> enrollment process</a></li>
+                    <li><a class="dropdown-item " href="#"> <i class="fa-solid fa-square fa-2xs"
+                          style="color: #5a5858;"></i> requirements and credentiels</a></li>
+                    <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                          style="color: #5a5858;"></i> tuition fees</a></li>
+                    <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                          style="color: #5a5858;"></i> Faculty of Languages & Translation</a></li>
+                    <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                          style="color: #5a5858;"></i> PUA rules and regulations</a></li>
+                    <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-square fa-2xs"
+                          style="color: #5a5858;"></i> academic calendar</a></li>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="  nav-link text-white  px-2" href="./index1.html">academics</a>
+              </li>
+              <li class="nav-item">
+                <a class="  nav-link text-white px-2" href="./postgrad.html">postgrauate studies</a>
+              </li>
+              <li class="nav-item">
+                <a class="  nav-link text-white px-2" href="./researchAndInternationalPublishing.html">research </a>
+              </li>
+              <li class="nav-item ">
+                <a class="  nav-link text-white px-2 d-inline-flex align-items-center" href="#">
+                  community service
+                  <i class="fa-solid fa-magnifying-glass fa-sm ms-2"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link highlight" href="./team.html">Our Team</a>
+              </li>
+
+
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" onclick="switchLanguage('ar')">العربية</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- announcement -->
+    <div class="announcement-bar">
+      <div class="container d-flex align-items-center">
+        <span class="announcement-title">Announcement</span>
+        <span class="arrow-btn" data-bs-target="#announcementCarousel" data-bs-slide="prev">
+          <i class="bi bi-chevron-left"></i>
+        </span>
+        <span class="arrow-btn" data-bs-target="#announcementCarousel" data-bs-slide="next">
+          <i class="bi bi-chevron-right"></i>
+        </span>
+
+
+        <div id="announcementCarousel" class="carousel slide ms-3 flex-grow-1" data-bs-ride="carousel"
+          data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              Achievement: Pharos University ranked among the top private universities in Egypt for 2025.
+            </div>
+            <div class="carousel-item">
+              Fall 2025 registration is now open at Pharos University. Visit Student Affairs for more details.
+            </div>
+            <div class="carousel-item">
+              Research Grants - Funding available for innovative student and faculty projects.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 2 -->
+
+
+    <!-- Content Section -->
+    <div class="container py-5 z-1">
+      <div class="row align-items-center">
+
+        <!-- Left Column -->
+        <div class="col-lg-6 pua-left">
+          <h1 class="fw-bold ">Pharos University in Alexandria (PUA): Alexandria’s First Private University</h1>
+          <h1 class="fw-bold lang-ar">جامعة فاروس بالإسكندرية: أول جامعة خاصة في الإسكندرية</h1>
+          <img src="./imgs/PUA1.jpg" alt="PUA Campus" class="img-fluid rounded mt-3">
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-lg-6 mt-4 mt-lg-0 pua-right">
+          <p class=""><strong>Founded in 2006</strong> by Republican Decree No. 252, with further expansions in 2009 and
+            2020...</p>
+
+          <p class="">PUA is fully accredited, with degrees equivalent to those from the Supreme Council...</p>
+
+          <p class="">International collaboration is central to PUA’s strategy, including programs with KTH (Sweden) and
+            TU Dublin (Ireland)...</p>
+
+          <p class="">With a commitment to sustainable development, PUA aligns its mission and vision...</p>
+
+          <!-- Features -->
+          <!-- <div class="z-n1">
+            
+           </div> -->
+          <div class="icon-box-1 "><a href="#"><i class="  bi bi-building me-2"></i></a><strong>Alexandria’s First
+              Private University</strong></div>
+          <hr>
+
+          <div class="icon-box "><a href="#"><i class="bi bi-award me-2"></i></a><strong>Fully Accredited
+              Degrees</strong></div>
+          <hr>
+
+          <div class="icon-box "><a href="#"><i class="bi bi-globe me-2"></i></a><strong>International Partnerships &
+              Dual-Degrees</strong></div>
+          <hr>
+
+          <div class="icon-box "><a href="#"><i class="bi bi-gear-fill me-2"></i></a><strong>12 Faculties with Advanced
+              Facilities</strong></div>
+
+          <a href="#" class="btn btn-lg rounded-pill px-4 py-2 fw-semibold btn-pua ">Learn more →</a>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 3 -->
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center" style="min-height: 90vh;">
+
+      <div class="container text-center text-white">
+        <h1 class="World display-4 fw-bold ">A World of Ideas, One Campus<br>Big Dreams Start on PUA</h1>
+        <h1 class="World display-4 fw-bold lang-ar">عالم من الأفكار، في حرم جامعي واحد<br>الأحلام الكبيرة تبدأ في جامعة
+          فاروس</h1>
+
+        <p class="lead mt-3 mx-auto " style="max-width: 700px;">
+          Discover a vibrant, inclusive, and inspiring place to learn, grow, and connect.
+          At PUA, campus life goes beyond the classroom—it’s where futures are built,
+          friendships are formed, and dreams take flight. Join us and be part of something extraordinary.
+        </p>
+        <p class="lead mt-3 mx-auto lang-ar" style="max-width: 700px;">
+          اكتشف مكانًا نابضًا بالحياة، شاملاً وملهمًا للتعلم والنمو والتواصل.
+          في جامعة فاروس، تتجاوز الحياة الجامعية قاعات الدراسة—حيث تُبنى المستقبلات،
+          وتُشكل الصداقات، وتنطلق الأحلام. انضم إلينا وكن جزءًا من شيء استثنائي.
+        </p>
+        <a href="#" class="btn  btn-lg  fw-semibold btn-pua ">Join PUA Today → </a>
+
+        <a href="#" class="btn btn-lg   fw-semibold btn-pua lang-ar">انضم إلى جامعة فاروس اليوم ←</a>
+      </div>
+    </section>
+
+
+
+
+    <!-- 4 -->
+
+
+    <div class="nour">PUA News</div>
+
+    <div class="container-fluid custom-container">
+
+
+      <div id="cardsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <!-- Dots -->
+        <!-- Dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+
+
+          <div class="carousel-item active">
+            <div class=" slide-1 row justify-content-center g-1">
+              <div class="  col-12 col-sm-7 col-lg-3">
+                <div class="custom-card text-center">
+                  <div class="news-card"><a href="#"><img src="./imgs/2.png" alt="News 2">
+                      <p class="date">July 15, 2025</p>
+                      <h3>Partnership Agreement with Instituto Cervantes</h3>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="  col-12 col-sm-7 col-lg-3">
+                <div class="custom-card text-center">
+                  <div class="news-card"><a href="#"><img src="./imgs/3.png" alt="News 3">
+                      <p class="date">July 15, 2025</p>
+                      <h3>An invitation to Register for “Be Ready” Initiative for Future Skills</h3>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="  col-12 col-sm-7 col-lg-3">
+                <div class="custom-card text-center">
+                  <div class="news-card"><a href="#"><img src="./imgs/4.png" alt="News 3">
+                      <p class="date">July 15, 2025</p>
+                      <h3>Academic Staff Vacancies: Faculty of Mass Communication</h3>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center g-1">
+              <div class="col-12 col-sm-7 col-lg-3">
+                <div class="custom-card text-center">
+                  <div class="news-card"><a href="#"><img src="./imgs/1.png" alt="News 1">
+                      <p class="date">August 11, 2025</p>
+                      <h3>Second round of its specialized English program for PUA staff</h3>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-7 col-lg-3">
+                <div class="custom-card text-center">
+                  <div class="news-card"><a href="#"><img src="./imgs/5.png" alt="News 3">
+                      <p class="date">July 13, 2025</p>
+                      <h3>English Language Centre's internship</h3>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-7 col-lg-3">
+                <div class="custom-card text-center">
+                  <div class="news-card"><a href="#"><img src="./imgs/6.png" alt="News 3">
+                      <p class="date">July 10, 2025</p>
+                      <h3>Academic Jobs Announcement for the year 2025-2026</h3>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center g-1">
+              <div class="col-12 col-sm-7 col-lg-3">
+                <div class="custom-card text-center">
+                  <div class="news-card"><a href="#"><img src="./imgs/7.jpg" alt="News 3">
+                      <p class="date">June 22, 2025</p>
+                      <h3>Historic Agreement: Egypt's First Dual Bachelor's Degree in Chinese Language</h3>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-7 col-lg-3">
+                <div class="custom-card text-center">
+                  <div class="news-card"><a href="#"><img src="./imgs/8.jpg" alt="News 3">
+                      <p class="date">June 22, 2025</p>
+                      <h3>Announcement of Academic Positions at the Faculty of Pharmacy</h3>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-7 col-lg-3">
+                <div class="custom-card text-center">
+                  <div class="news-card"><a href="#"><img src="./imgs/9.jpg" alt="News 3">
+                      <p class="date">June 12, 2025</p>
+                      <h3>Communication Skills within an Academic Setting</h3>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <button class="see-all">See All News</button>
+
+    <!-- 5 -->
+
+
+    <footer class="footer-section text-light pt-5">
+      <div class="container">
+        <div class="row pb-5 border-bottom border-secondary mb-5">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+            <img src="./imgs/logo.png" alt="Pharos University Logo" class="img-fluid mb-3" style="max-width: 150px" />
+            <div class="mt-4">
+              <h4 class="text-white fw-semibold mb-4">Contact Info</h4>
+              <p class="mb-2">
+                <i class="fas fa-envelope me-2 text-white"></i>
+                support@pua.edu.eg
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h4 class="text-white fw-semibold mb-4">Social Media</h4>
+            <div class="social-icons">
+              <a href="#" class="d-inline-block text-center text-white rounded-circle me-2"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="#" class="d-inline-block text-center text-white rounded-circle me-2"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="#" class="d-inline-block text-center text-white rounded-circle me-2"><i
+                  class="fab fa-youtube"></i></a>
+              <a href="#" class="d-inline-block text-center text-white rounded-circle"><i
+                  class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <h4 class="text-white fw-semibold mb-4">
+              Subscribe Our Newsletter
+            </h4>
+            <form action="#" class="subscribe-form position-relative">
+              <input type="email" placeholder="Your Email Address" class="form-control p-2 px-3 border-0" />
+              <button type="submit" class="btn position-absolute top-0 end-0 h-100 rounded-start-0">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+            <p class="mt-3 text-white-50">
+              Stay updated with our latest news and events. Unsubscribe anytime.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <h4 class="text-white fw-semibold mb-4">Our Location</h4>
+            <!-- google map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.589838450181!2d29.96191761514325!3d31.2045589814745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5ba7ba3832d%3A0x33db60f8ab87f317!2sPharos%20University%20in%20Alexandria!5e0!3m2!1sen!2seg!4v1678886543210!5m2!1sen!2seg"
+              class="w-100 rounded border-0" height="250" allowfullscreen="" loading="lazy"></iframe>
+            <div class="mt-3">
+              <p class="mb-2">
+                <i class="fas fa-map-marker-alt me-2 text-white"></i> Pharos
+                University, Canal El Mahmoudia Street, beside Green Plaza
+                Complex.
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-phone me-2 text-white"></i> +(203) 3877700
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-5">
+            <h4 class="text-white fw-semibold mb-4">Student Help</h4>
+            <ul class="list-unstyled p-0 footer-links">
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Academic Rules</a>
+              </li>
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Campus Activities</a>
+              </li>
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Campus Life</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white fw-semibold mb-4">Resources</h4>
+            <ul class="list-unstyled p-0 footer-links">
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Media Gallery</a>
+              </li>
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Useful links</a>
+              </li>
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Brochure</a>
+              </li>
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Academic Calendar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white fw-semibold mb-4">Sitemap</h4>
+            <ul class="list-unstyled p-0 footer-links">
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">About</a>
+              </li>
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Admissions</a>
+              </li>
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Research</a>
+              </li>
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Faculties & Schools</a>
+              </li>
+              <li>
+                <a href="#" class="d-block py-1 text-light text-decoration-none">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- copyright department-->
+      <div class="copyright-area bg-dark py-3 mt-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8 col-12 text-center text-md-start">
+              <p class="m-0 text-secondary">
+                Copyright © 2025 Pharos University In Alexandria - Pharos
+                University : By Web_team
+                <br>
+                this project was developed by [Alaa Atef, Menna Allah, Nour, Abdullah] under the supervision of [yasser
+                abodaif ] as part of our training at <strong>Arabian Academy</strong>.
+              </p>
+            </div>
+            <div class="col-md-4 col-12 text-center text-md-end mt-3 mt-md-0">
+              <div class="back-to-top d-inline-block">
+                <a href="#" class="d-inline-block text-center text-white rounded text-decoration-none lh-lg"><i
+                    class="fas fa-angle-up"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

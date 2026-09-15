@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الشؤون الأكاديمية | جامعة فاروس</title>
+
+  <!-- Bootstrap RTL -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css">
+
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Your styles (kept) -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <link rel="stylesheet" href="./css/style1-ar.css">
+  <link rel="stylesheet" href="./css/index-ar.css">
+
+  <!-- Small RTL overrides -->
+  <link rel="stylesheet" href="./css/rtl.css">
+  <style>
+    body {
+      display: none;
+    }
+  </style>
+  <script>
+    (function () {
+      let lang = localStorage.getItem("lang") || "en";
+      let current = window.location.pathname.split("/").pop();
+      if (!current) current = "index.html";
+
+      let parts = current.split(".");
+      let baseName = parts[0].replace("-ar", "");
+      let extension = parts[1];
+
+      let newPage = (lang === "ar")
+        ? baseName + "-ar." + extension
+        : baseName + "." + extension;
+
+      if (current !== newPage) {
+      
+        window.location.replace(newPage);
+      } else {
+        
+        document.write('<style>body{display:block;}</style>');
+      }
+    }
+    )();
+    function switchLanguage(lang) {
+      localStorage.setItem("lang", lang);
+
+      let current = window.location.pathname.split("/").pop();
+      if (!current) current = "index.html";
+
+      let parts = current.split(".");
+      let baseName = parts[0].replace("-ar", "");
+      let extension = parts[1];
+
+      
+      let newPage = (lang === "ar")
+        ? baseName + "-ar." + extension
+        : baseName + "." + extension;
+
+      window.location.replace(newPage);
+    }
+  </script>
+
+</head>
+
+<body>
+  <!-- 1 -->
+  <div>
+    <div class="ima position-relative text-center z-1">
+      <img src="./imgs/10.jpg" class="imag w-100" alt="صورة خلفية">
+
+      <div class="text text-center text-white p-4 position-absolute z-1">
+        <h1 class="display-4 fw-bold text-capitalize">الشؤون الأكاديمية</h1>
+        <p class="text1 bord lead mt-0 border-start ps-3" style="flex: 0 0 80%;">
+          في جامعة فاروس، يهدف قطاع الشؤون الأكاديمية إلى ترسيخ التميز في التعليم،
+          وإلهام الابتكار، وإعداد قادة للمستقبل من خلال برامج عالمية الجودة، وهيئة تدريس
+          متميزة، وبيئة تعلم نابضة بالحياة.
+        </p>
+      </div>
+
+      <nav class="navbar myNave navbar-expand-lg text-white position-absolute z-3">
+        <div class="container-fluid">
+          
+          <a href="#"><img src="./imgs/p.logo-removebg-preview (1).png" alt="" class="logo"></a>
+          <p class="tx1">جامعة <span class="tx2">فاروس</span></p>
+
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContentAr" aria-controls="navbarSupportedContentAr" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContentAr">
+            <ul class="menu navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white px-2 d-inline-flex align-items-center" href="./index-ar.html">الرئيسية</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white px-2" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">عن جامعة فاروس</a>
+                <ul class="dropdown-menu dropdown-menu-center p-3" style="width: 1300px;">
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                      <li><a class="dropdown-item c-border" href="#">الجامعة</a></li>
+                      <li><a class="dropdown-item " href="./index2-ar.html"> <i class="fa-solid fa-square fa-2xs" style="color: #5a5858;"></i> المؤسس</a></li>
+                     
+                      <li><a class="dropdown-item" href="./index3-ar.html"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلمة رئيس الجامعة</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> مجلس الجامعة</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> الرؤية والرسالة</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> الكتيب التعريفي</a></li>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12">
+                      <li><a class="dropdown-item c-border" href="#">الإستراتيجية</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> القيم الأساسية</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> الأهداف الإستراتيجية للجامعة</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> السياسات العامة</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> لائحة دعم مشاركة المرأة في العمل</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> سياسة تقليل المواد أحادية الاستخدام وإدارة النفايات</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> سياسة منع ومكافحة التدخين</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> سياسة التوريد الأخلاقي</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> سياسة المشتريات المستدامة بجامعة فاروس</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> سياسة الاستثمار المستدام</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> سياسة المساواة في الأجور</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> سياسة تكافؤ الوصول والدمج</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> سياسة العمل المناخي</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> جامعة فاروس من أجل طاقة نظيفة وميسورة</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> سياسة إعادة استخدام المياه بجامعة فاروس</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> سياسة مكافحة الرشوة</a></li>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12">
+                      <li><a class="dropdown-item c-border" href="#">الاستدامة</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> تقارير الاستدامة</a></li>
+                      <li><a class="dropdown-item c-border" href="#">تقرير النوع الاجتماعي</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> الحوكمة والبيئة والمجتمع (ESG)</a></li>
+                      <li><a class="dropdown-item c-border" href="#">الجودة</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> مركز ضمان الجودة</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> إدارة جودة الإدارات</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white px-2" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">الكليات</a>
+                <ul class="dropdown-menu dropdown-menu-center p-3" style="width: 850px;">
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلية الصيدلة</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلية طب الأسنان</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلية العلوم المالية والإدارية</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلية اللغات والترجمة</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلية الدراسات القانونية والمعاملات الدولية</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلية السياحة وإدارة الفنادق</a></li>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلية العلاج الطبيعي</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلية الإعلام</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلية تكنولوجيا العلوم الصحية التطبيقية</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلية علوم الحاسب والذكاء الاصطناعي</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                            style="color:#5a5858;"></i> كلية الهندسة</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white px-2" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">القبول والتسجيل</a>
+                <ul class="dropdown-menu p-3" style="width: 400px;">
+                  <div class="row">
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                          style="color:#5a5858;"></i> إجراءات القيد</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                          style="color:#5a5858;"></i> الشروط والمستندات</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                          style="color:#5a5858;"></i> المصروفات الدراسية</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                          style="color:#5a5858;"></i> كلية اللغات والترجمة</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                          style="color:#5a5858;"></i> اللوائح والقوانين</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-square fa-2xs"
+                          style="color:#5a5858;"></i> التقويم الأكاديمي</a></li>
+                  </div>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="active nav-link text-white p-2" href="./index1-ar.html">الشؤون الأكاديمية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-2" href="./postgrad-ar.html">الدراسات العليا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-2" href="./researchAndInternationalPublishing-ar.html">البحث والنشر
+                  الدولي</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-2 d-inline-flex align-items-center" href="#">خدمة المجتمع <i
+                    class="fa-solid fa-magnifying-glass fa-sm ms-2"></i></a>
+              </li>
+
+              <!-- Language switch -->
+           <li class="nav-item">
+                <a class="nav-link highlight" href="./team.html">فريقنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" onclick="switchLanguage('en')">English</a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="sq"></div>
+
+    <div class="row">
+      <div class="links col-lg-4 col-sm-12">
+        <ul class="menu1">
+          <li><a class="item" href="#"><i class="fa-regular fa-star fa-2xs" style="color:#ce721c;"></i> برامج
+              البكالوريوس</a></li>
+          <li><a class="item" href="#"><i class="fa-regular fa-star fa-2xs" style="color:#ce721c;"></i> الأنشطة
+              الطلابية</a></li>
+          <li><a class="item" href="#"><i class="fa-regular fa-star fa-2xs" style="color:#ce721c;"></i> لوائح
+              البكالوريوس</a></li>
+          <li><a class="item" href="#"><i class="fa-regular fa-star fa-2xs" style="color:#ce721c;"></i> التقويم
+              الأكاديمي</a></li>
+          <li><a class="item" href="#"><i class="fa-regular fa-star fa-2xs" style="color:#ce721c;"></i> نماذج الشؤون
+              الأكاديمية</a></li>
+          <li><a class="item" href="#"><i class="fa-regular fa-star fa-2xs" style="color:#ce721c;"></i> التعاون مع
+              الجهات المحلية والوطنية</a></li>
+          <li><a class="item" href="#"><i class="fa-regular fa-star fa-2xs" style="color:#ce721c;"></i> لائحة الأعذار
+              الطلابية</a></li>
+          <li><a class="item" href="#"><i class="fa-regular fa-star fa-2xs" style="color:#ce721c;"></i> الإرشاد
+              الأكاديمي</a></li>
+        </ul>
+      </div>
+
+      <div class="study-box col-8">
+        <h2>الدراسة في جامعة فاروس <i class="fa-solid fa-graduation-cap fa-2xs" style="color:#ce721c;"></i></h2>
+        <p>
+          يسرني أن أرحب بكم ترحيبًا حارًا في صفحة قطاع التعليم وشؤون الطلاب، والتي تقدم صورة واضحة ومتابعة دقيقة لكل ما
+          يتعلق بالعملية التعليمية في جامعة فاروس.
+          ومن بين أهدافها تزويد الزائرين ببيان رؤية ورسالة وأهداف القطاع الاستراتيجية المنبثقة من رؤية ورسالة الجامعة.
+          ويهدف ذلك إلى الارتقاء بالتعليم من خلال إنشاء منظومة أكاديمية متكاملة نسعى فيها إلى توفير بيئة تعليمية محفزة
+          تضمن مخرجات تعليمية متميزة تتوافق مع التحديات الاقتصادية الراهنة وخطط التنمية، وتحقق تطلعات وطننا العزيز
+          وتساهم بفاعلية في ازدهاره ومنافسته لدول العالم المتقدمة.
+          ومنذ بزوغ رؤية 2030، دخلت الجامعات المصرية الحكومية والخاصة مسارًا تاريخيًا من التحول الرقمي والتطوير لمواكبة
+          الزخم التنموي الوطني في جميع المجالات، وتهدف لأن تكون في طليعة المؤسسات المساهمة في تحقيق مستهدفات الرؤية
+          انطلاقًا من إيمان عميق بتأثير هذه التوجهات في صياغة مستقبل الوطن. كما تبادر الجامعات بتعبئة قدراتها التعليمية
+          والبحثية والخدمية لتعظيم إمكاناتها وحضورها الاستراتيجي في برنامج التحول الوطني.
+          وقد كان للدور الريادي لقطاع التعليم وشؤون الطلاب بجامعة فاروس أثرٌ بالغ في تقديم خدمات تعليمية لطلابنا وفق
+          معايير الجودة والاعتماد الوطنية والدولية، وبما يتماشى مع متغيرات العصر في مجال التعلم الإلكتروني وتطوير البنية
+          المعلوماتية؛ مما أسهم في رفع مستويات الأداء التعليمي واستيفاء متطلبات تحقيق معايير الفاعلية التعليمية، فضلًا
+          عن تبني سياسات فعّالة للتعليم والتعلم، وتوفير الموارد المادية اللازمة وبيئة تعليمية مواتية لطلابنا. ولعل هذا
+          الدور يتجلى من خلال تطوير الخطط والبرامج الأكاديمية، واستحداث برامج جديدة، وتشجيع الأنشطة الجامعية.
+          ويضع القطاع على رأس أولوياته توفير جميع سبل الدعم والرعاية والإرشاد للطلاب، وهو ما يتحقق بلا شك بفضل الدعم
+          السخي غير المحدود من إدارة الجامعة وبجهود الكليات والمراكز المعنية، إيمانًا منهم بدورهم في تحقيق التنمية
+          الوطنية الشاملة.
+          وتتويجًا للتحول اللافت الذي شهدته الجامعات المصرية، اقتضت مبادرة جامعة فاروس إعادة تعريف هويتها لتتوافق مع
+          تحولات اقتصاد المعرفة والثورتين الصناعيتين الرابعة والخامسة، وتسعى بجد لتكون نموذجًا يحتذى به لمؤسسات التعليم
+          العالي في القرن الحادي والعشرين من خلال بناء منظومة تعليمية محورها التنمية والابتكار، بما يمهد الطريق لإعداد
+          كوادر مؤهلة قادرة على المنافسة في سوق العمل ودعم القطاعات الصناعية والخدمية الوطنية.
+          وتجدر الإشارة إلى التزام جامعة فاروس بتقديم برامج تعليمية عالية الجودة تلبي احتياجات سوق العمل وتتوافق مع
+          متطلبات المجتمع وتمنح الأفراد ميزة نوعية أكاديميًا ومهنيًا، وتعزيزًا لهذا الالتزام أطلقت الجامعة برامج جودة
+          جديدة مكملة لنظيراتها القائمة في مختلف الكليات.
+          كما تولي الجامعة اهتمامًا كبيرًا بالطلاب الوافدين من مختلف الدول، لاسيما الدول العربية، من خلال رعايتهم
+          وإشراكهم في الأنشطة الطلابية المختلفة، باعتبارهم سفراء لمصر في الخارج.
+          وأخيرًا، أجدد الترحيب الكريم بزوّار صفحة قطاع التعليم وشؤون الطلاب بجامعة فاروس، آملين أن يشهد مستقبل جامعتنا
+          ما تصبو إليه من إنجازات ومساهمات.
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer class=" container-fluid footer-section text-light pt-5">
+      <div class="row pb-5 border-bottom border-secondary mb-5">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ">
+          <img src="./imgs/logo.png" alt="شعار جامعة فاروس" class="img-fluid mb-3" style="max-width: 150px" />
+          <div class="mt-4">
+            <h4 class="text-white fw-semibold mb-4">معلومات الاتصال</h4>
+            <p class="mb-2">
+              <i class="fas fa-envelope me-2 text-white"></i>
+              support@pua.edu.eg
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h4 class="text-white fw-semibold mb-4">وسائل التواصل الاجتماعي</h4>
+          <div class="social-icons">
+            <a href="#" class="d-inline-block text-center text-white rounded-circle me-2"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="#" class="d-inline-block text-center text-white rounded-circle me-2"><i
+                class="fab fa-twitter"></i></a>
+            <a href="#" class="d-inline-block text-center text-white rounded-circle me-2"><i
+                class="fab fa-youtube"></i></a>
+            <a href="#" class="d-inline-block text-center text-white rounded-circle"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <h4 class="text-white fw-semibold mb-4">اشترك في النشرة البريدية</h4>
+          <form action="#" class="subscribe-form position-relative">
+            <input type="email" placeholder="بريدك الإلكتروني" class="form-control p-2 px-3 border-0" />
+            <button type="submit" class="btn position-absolute top-0 end-0 h-100 rounded-start-0">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+          </form>
+          <p class="mt-3 text-white-50">
+            ابقَ على اطلاع بآخر أخبارنا وفعالياتنا. يمكنك إلغاء الاشتراك في أي وقت.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-5">
+          <h4 class="text-white fw-semibold mb-4">موقعنا</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.589838450181!2d29.96191761514325!3d31.2045589814745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5ba7ba3832d%3A0x33db60f8ab87f317!2sPharos%20University%20in%20Alexandria!5e0!3m2!1sen!2seg!4v1678886543210!5m2!1sen!2seg"
+            class="w-100 rounded border-0" height="250" allowfullscreen="" loading="lazy"></iframe>
+          <div class="mt-3">
+            <p class="mb-2">
+              <i class="fas fa-map-marker-alt me-2 text-white"></i> جامعة فاروس، شارع قناة المحمودية، بجوار مجمع جرين
+              بلازا.
+            </p>
+            <p class="mb-2">
+              <i class="fas fa-phone me-2 text-white"></i> +(203) 3877700
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-5">
+          <h4 class="text-white fw-semibold mb-4">مساعدة الطلاب</h4>
+          <ul class="list-unstyled p-0 footer-links">
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">اللوائح الأكاديمية</a></li>
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">أنشطة الحرم الجامعي</a></li>
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">الحياة الجامعية</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h4 class="text-white fw-semibold mb-4">الموارد</h4>
+          <ul class="list-unstyled p-0 footer-links">
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">معرض الوسائط</a></li>
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">روابط مفيدة</a></li>
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">سياسة الخصوصية</a></li>
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">الكتيب</a></li>
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">التقويم الأكاديمي</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h4 class="text-white fw-semibold mb-4">خريطة الموقع</h4>
+          <ul class="list-unstyled p-0 footer-links">
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">عن الجامعة</a></li>
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">القبول</a></li>
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">البحث العلمي</a></li>
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">الكليات والمدارس</a></li>
+            <li><a href="#" class="d-block py-1 text-light text-decoration-none">تواصل معنا</a></li>
+          </ul>
+        </div>
+        
+          
+      </div>
+
+      <div class="copyright-area bg-dark py-3 mt-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8 col-12 text-center text-md-start">
+              <p class="m-0 text-secondary">
+                جميع الحقوق محفوظة © 2025 جامعة فاروس بالإسكندرية - جامعة فاروس : بواسطة فريق الويب
+                <br>
+                تم تطوير هذا المشروع بواسطة [الاء عاطف، منة الله، نور، عبدالله] تحت إشراف [ياسر أبوضيف] كجزء من تدريبنا في<strong>Arabian Academy</strong>. 
+                  
+              </p>
+            </div>
+            <div class="col-md-4 col-12 text-center text-md-end mt-3 mt-md-0">
+              <div class="back-to-top d-inline-block">
+                <a href="#" class="d-inline-block text-center text-white rounded text-decoration-none lh-lg">
+                  <i class="fas fa-angle-up"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
